@@ -146,7 +146,7 @@ function takeCommand(message){
 
     else if(message.includes("computer lab") 
         || message.includes("where is computer lab")
-        || message.includes("computer")
+        // || message.includes("computer")
         || message.includes("computer lab 5")
         || message.includes("computer lab 9")
         || message.includes("computer lab 7")
