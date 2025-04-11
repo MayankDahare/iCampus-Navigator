@@ -215,13 +215,14 @@ function takeCommand(message){
         || message.includes("kya yha hod sir hai")
         || message.includes("main hod sir ko kha dekh sakta hoon")
         || message.includes("hod sir kahan milenge")){
-        speak("there are 4 hods here the first is the hod of the computer science department, which is on the ground floor. the second is the hod of the electrical department, located on the first floor. the third is the hod of the mechanical department, which is also on the first floor. the fourth is the hod of the mining department, situated on the third floor")}
+        speak("there are 4 hod here the first is the hod of the computer science department, which is on the ground floor. the second is the hod of the electrical department, located on the first floor. the third is the hod of the mechanical department, which is also on the first floor. the fourth is the hod of the mining department, situated on the third floor")}
 
 
 
 
     else if(message.includes("cs hod sir") 
         || message.includes("where is amit sir")
+        || message.includes("hod of computer science")
         || message.includes("cs hod")
         || message.includes("cse hod")
         || message.includes("hod cse")
