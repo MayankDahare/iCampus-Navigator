@@ -11,19 +11,19 @@ function speak(text){
     window.speechSynthesis.speak(text_speak)
 }
 
-function wishMe(){
-    let day=new Date()
-    let hours=day.getHours()
-    if(hours>=0 && hours <12){
-        speak("Good Morning Sir")
-    }
-    else if(hours>=12 && hours <16){
-        speak("Good Afternoon Sir")
-    }
-    else{
-        speak("Good Evening Sir")
-    }
-}
+// function wishMe(){
+//     let day=new Date()
+//     let hours=day.getHours()
+//     if(hours>=0 && hours <12){
+//         speak("Good Morning Sir")
+//     }
+//     else if(hours>=12 && hours <16){
+//         speak("Good Afternoon Sir")
+//     }
+//     else{
+//         speak("Good Evening Sir")
+//     }
+// }
 
 window.addEventListener('load',()=>{
     wishMe()
@@ -802,3 +802,8 @@ function takeCommand(message){
     }
   
 }
+
+// Seamless marquee duplication for infinite scroll
+const marquee = document.querySelector(".marquee-content");
+const clone = marquee.cloneNode(true);
+document.getElementById("marquee").appendChild(clone);

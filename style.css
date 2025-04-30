@@ -1,3 +1,23 @@
+@font-face {
+    font-family: 'Bold';
+    src: url(assets/fonts/Brigends\ Expanded.otf) format(opentype) ;
+
+}
+@font-face {
+    font-family: 'italic';
+    src: url(assets/fonts/Abuget.ttf) format(truetype) ; 
+}
+@font-face {
+    font-family: 'gilroy';
+    src: url(assets/fonts/Gilroy-Light.ttf) format(truetype) ; 
+    font-weight: 200 
+}
+@font-face {
+    font-family: 'gilroy';
+    src: url(assets/fonts/Gilroy-Regular.ttf) format(truetype) ;
+  
+}
+
 /* @import url('https://fonts.googleapis.com/css2?family=Acme&family=Bungee+Tint&family=Prosto+One&family=Protest+Guerrilla&display=swap');
 
 *{
@@ -179,3 +199,61 @@ h1 {
         display: block;
     }
 }
+
+.marquee-wrapper {
+    width: 100%;
+    overflow: hidden;
+
+    padding: 5px 0;
+    /* background: #0e0e0e; */
+    margin-top: 5rem;
+  }
+  
+  .marquee {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    will-change: transform;
+  }
+  
+  .marquee-content {
+    display: flex;
+    animation: scroll 20s linear infinite;
+    
+  }
+  
+  .marquee-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-right: 60px;
+    font-size: 1.5rem;
+    color: #ffffff;
+   font-family: 'gilroy';
+   font-weight: 200;
+    transition: transform 0.3s ease;
+  }
+  
+
+
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .marquee-item {
+      font-size: 2.2rem;
+    }
+  
+    .marquee-item img {
+      height: 70px;
+    }
+  }
